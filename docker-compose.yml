@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  memo.api:
+    image: ${DOCKER_REGISTRY-}memoapi
+    build:
+      context: .
+      dockerfile: Memo/Dockerfile
